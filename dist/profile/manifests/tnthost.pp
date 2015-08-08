@@ -1,12 +1,7 @@
 # common setup of tnt managed host
 class profile::tnthost {
-
-  $ssh_keys = hiera('tnthost::ssh_keys')
-
-  $tntadmin_home = $facts['os']['family'] ? {
-    'RedHat'  => '/home/tntadmin',
-    'FreeBSD' => '/usr/home/tntadmin',
-  }
+  $ssh_keys      = hiera('tntadmin::ssh_keys')
+  $tntadmin_home = hiera('tntadmin::home')
 
   group { 'tntadmin':
     ensure => 'present',
