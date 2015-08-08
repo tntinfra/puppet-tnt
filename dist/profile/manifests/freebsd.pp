@@ -1,11 +1,14 @@
 # freebsd settings
 #
 class profile::freebsd {
-  class { 'pkgng':
-    purge_repos_d => false
-  }
 
-  Package {
-    provider => 'pkgng',
+  if $facts['os']['family'] == 'FreeBSD' {
+    class { 'pkgng':
+      purge_repos_d => false
+    }
+
+    Package {
+      provider => 'pkgng',
+    }
   }
 }
