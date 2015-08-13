@@ -22,4 +22,8 @@ class profile::tnthost {
       user => 'tntadmin',
     }
   }
+
+  package { 'sudo':
+    ensure => 'installed',
+  }
 }
