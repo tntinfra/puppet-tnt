@@ -29,6 +29,6 @@ class profile::tnthost {
 
   sudo::conf { 'tntadmin_root':
     priority => 10,
-    source => 'puppet:///profile/sudoers_tntadmin'
+    source => 'puppet:///modules/profile/sudoers_tntadmin'
   }
 }
