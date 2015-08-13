@@ -2,7 +2,7 @@
 #
 class profile::freebsd {
 
-  if $facts['os']['family'] == 'FreeBSD' {
+  if $::osfamily == 'FreeBSD' {
     class { 'pkgng':
       purge_repos_d => false
     }
