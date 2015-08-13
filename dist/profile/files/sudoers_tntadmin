@@ -1,0 +1,3 @@
+Defaults:tntadmin         !requiretty
+
+tntadmin ALL=(ALL) ALL
