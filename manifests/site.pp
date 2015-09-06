@@ -7,5 +7,5 @@ node sippma.tntinfra.net {
 }
 
 node sippma-db.tntinfra.net {
-
+  include role::sippma::db
 }
