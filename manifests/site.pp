@@ -5,3 +5,7 @@ node noc.tntinfra.net {
 node sippma.tntinfra.net {
   include role::sippma::base
 }
+
+node sippma-db.tntinfra.net {
+
+}
