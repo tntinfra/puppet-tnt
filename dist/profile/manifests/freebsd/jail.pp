@@ -9,7 +9,7 @@ class profile::freebsd::jail {
 
   file_line { 'clone_lo1_interface':
     ensure => 'present',
-    path   => '/etc/rc.conf'
-    line   => 'cloned_interfaces="${cloned_interfaces} lo1"'
+    path   => '/etc/rc.conf',
+    line   => 'cloned_interfaces="${cloned_interfaces} lo1"',
   }
 }
