@@ -20,7 +20,7 @@ class profile::sippma::postgresql {
     line   => 'postgresql_enable="YES"'
   } ->
   service { 'postgresql':
-    ensure  => 'running,'
+    ensure  => 'running',
     enabled => true,
   }
 }
