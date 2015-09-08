@@ -16,11 +16,11 @@ class profile::sippma::postgresql {
   } ->
   file_line { 'postgresql_startup':
     ensure => 'present',
-    path => '/etc/rc.conf',
-    line => 'postgresql_enable="YES"'
+    path   => '/etc/rc.conf',
+    line   => 'postgresql_enable="YES"'
   } ->
   service { 'postgresql':
-    ensure => 'running,'
-    enable => true,
+    ensure  => 'running,'
+    enabled => true,
   }
 }
