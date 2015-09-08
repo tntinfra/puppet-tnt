@@ -9,10 +9,14 @@ class profile::sippma::postgresql {
   file { '/usr/local/pgsql/data/postgresql.conf':
     ensure => 'file',
     source => 'puppet:///modules/profile/postgresql.conf',
+    owner  => 'pgsql',
+    group  => 'pgsql',
   } ->
   file { '/usr/local/pgsql/data/pg_hba.conf':
     ensure => 'file',
     source => 'puppet:///modules/profile/pg_hba.conf',
+    owner  => 'pgsql',
+    group  => 'pgsql',
   } ->
   file_line { 'postgresql_startup':
     ensure => 'present',
