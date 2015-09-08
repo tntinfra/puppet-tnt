@@ -8,11 +8,11 @@ class profile::sippma::postgresql {
   } ->
   file { '/usr/local/pgsql/data/postgresql.conf':
     ensure => 'file',
-    source => 'puppet:///module/profile/files/postgresql.conf',
+    source => 'puppet:///modules/profile/files/postgresql.conf',
   } ->
   file { '/usr/local/pgsql/data/pg_hba.conf':
     ensure => 'file',
-    source => 'puppet:///module/profile/files/pg_hba.conf',
+    source => 'puppet:///modules/profile/files/pg_hba.conf',
   } ->
   file_line { 'postgresql_startup':
     ensure => 'present',
