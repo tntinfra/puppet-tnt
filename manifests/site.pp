@@ -9,3 +9,7 @@ node 'sippma.tntinfra.net' {
 node 'sippma-db.tntinfra.net' {
   include role::sippma::db
 }
+
+node 'sippma-web.tntinfra.net' {
+  include role::sippma::web
+}
