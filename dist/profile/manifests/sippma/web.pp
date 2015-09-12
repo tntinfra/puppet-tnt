@@ -14,4 +14,8 @@ class profile::sippma::web {
     priority => 10,
     content  => 'tntadmin ALL=(sippma) NOPASSWD: ALL',
   }
+
+  package { 'git':
+    ensure => installed,
+  }
 }
