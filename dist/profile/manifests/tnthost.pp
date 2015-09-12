@@ -27,6 +27,11 @@ class profile::tnthost {
     ensure => 'installed',
   }
 
+  class { 'sudo':
+    config_file_replace => false,
+    purge               => false,
+  }
+
   sudo::conf { 'tntadmin_root':
     priority => 10,
     source => 'puppet:///modules/profile/sudoers_tntadmin'
