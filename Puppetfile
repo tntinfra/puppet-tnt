@@ -12,5 +12,5 @@ mod 'zleslie/pkgng', '0.2.5'
 # mod 'maestrodev/rvm', '1.12.1'
 
 mod 'rvm',
-  git => 'https://github.com/tosmi/puppet-rvm.git',
-  branch => 'master'
+  :git => 'https://github.com/tosmi/puppet-rvm.git',
+  :branch => 'master'
