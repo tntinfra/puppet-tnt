@@ -19,4 +19,8 @@ class profile::sippma::web {
   package { 'git':
     ensure => installed,
   }
+
+  package { 'python2':
+    ensure => installed,
+  }
 }
