@@ -23,10 +23,6 @@ class profile::tnthost {
     }
   }
 
-  package { 'sudo':
-    ensure => 'installed',
-  }
-
   class { 'sudo':
     config_file_replace => false,
     purge               => false,
