@@ -7,6 +7,7 @@ class profile::sippma::web {
     ensure     => present,
     uid        => '1977',
     gid        => '1977',
+    shell      => '/usr/local/bin/bash',
     managehome => true,
   }
 
