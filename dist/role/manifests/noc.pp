@@ -1,6 +1,8 @@
 # noc host role
 class role::noc {
-  include profile::tnthost
-  include profile::puppetmaster
-  include profile::sippma::hosts
+  contain profile::tnt::common
+  contain profile::tnt::hosts
+  contain profile::sippma::hosts
+  contain profile::puppetmaster
+
 }

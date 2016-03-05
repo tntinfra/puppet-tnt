@@ -1,5 +1,5 @@
 # common setup of tnt managed host
-class profile::tnthost {
+class profile::tnt::common {
   $ssh_keys      = hiera('tntadmin::ssh_keys')
   $tntadmin_home = hiera('tntadmin::home')
 

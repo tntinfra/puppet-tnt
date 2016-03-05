@@ -4,7 +4,7 @@ class profile::sippma::rvm {
   rvm::system_user { sippma: }
 
   rvm_system_ruby {
-    'ruby-2.1.6':
+    'ruby-2.1.7':
       ensure      => 'present',
   }
 
