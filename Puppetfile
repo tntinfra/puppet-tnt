@@ -9,6 +9,9 @@ mod 'spiette/selinux', '0.5.4'
 mod 'abstractit/puppet', '2.1.2'
 mod 'puppetlabs/inifile', '1.4.1'
 mod 'zleslie/pkgng', '0.2.5'
+mod 'elasticsearch/elasticsearch', '0.10.3'
+mod 'elasticsearch/logstash', '0.5.1'
+'
 # mod 'maestrodev/rvm', '1.12.1'
 
 mod 'rvm',
