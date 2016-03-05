@@ -5,8 +5,11 @@ class profile::tnt::elasticsearch {
   $elastic_config = hiera('elasticsearch::config')
 
   # config data in hiera
-  include elasticsearch
+  contain elasticsearch
   elasticsearch::instance { 'tntinfra':
     config => $elastic_config,
   }
+
+  # config data in hiera
+  contain logstash
 }
