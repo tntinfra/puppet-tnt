@@ -4,5 +4,5 @@ class profile::tnt::elasticsearch {
 
   # config data in hiera
   include elasticsearch
-  include elasticseach::instance
+  include elasticsearch::instance
 }
