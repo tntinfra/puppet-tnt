@@ -12,4 +12,6 @@ class profile::tnt::elasticsearch {
 
   # config data in hiera
   contain logstash
+
+  contain fluentd
 }
