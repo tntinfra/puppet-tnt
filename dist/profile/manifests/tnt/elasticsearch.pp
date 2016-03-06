@@ -16,5 +16,5 @@ class profile::tnt::elasticsearch {
   contain fluentd
 
   fluentd::plugin { 'fluent-plugin-elasticsearch': }
-  fluentd::plugin { 'fluent-secure-forward': }
+  fluentd::plugin { 'fluent-plugin-secure-forward': }
 }
