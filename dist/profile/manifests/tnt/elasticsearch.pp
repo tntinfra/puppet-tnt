@@ -14,4 +14,10 @@ class profile::tnt::elasticsearch {
   contain logstash
 
   contain fluentd
+
+  fluentd::plugin {
+    'fluent-plugin-elasticsearch':
+    'fluent-secure-forward':
+  }
+
 }
