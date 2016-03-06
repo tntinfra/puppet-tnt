@@ -15,6 +15,7 @@ mod 'ceritsc/yum', '0.9.6'
 mod 'ispavailability/file_concat', '0.3.0'
 mod 'elasticsearch/elasticsearch', '0.10.3'
 mod 'elasticsearch/logstash', '0.5.1'
+mod 'konstantin/fluentd', '0.5.0'
 # mod 'maestrodev/rvm', '1.12.1'
 
 mod 'rvm',
