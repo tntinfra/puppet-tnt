@@ -9,10 +9,6 @@ class profile::tnt::elasticsearch {
   elasticsearch::instance { 'tntinfra':
     config => $elastic_config,
   }
-
-  # config data in hiera
-  contain logstash
-
   contain fluentd
 
   fluentd::plugin { 'fluent-plugin-elasticsearch': }
